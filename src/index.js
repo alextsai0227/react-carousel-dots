@@ -231,7 +231,11 @@ class ReactCarouselDots extends React.Component {
   getHolderStyle = () => {
     let style = {
       height: this.props.size,
-      width: (this.props.size * (this.props.visible + 1))
+      width: (this.props.size * (this.props.visible)),
+      position: 'absolute',
+      bottom: '6%',
+      left: '50%',
+      transform: "translateX(-50%)"
     };
     return style;
   }

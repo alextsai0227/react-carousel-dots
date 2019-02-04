@@ -612,7 +612,11 @@ var ReactCarouselDots = function (_React$Component) {
     _this.getHolderStyle = function () {
       var style = {
         height: _this.props.size,
-        width: _this.props.size * (_this.props.visible + 1)
+        width: _this.props.size * _this.props.visible,
+        position: 'absolute',
+        bottom: '6%',
+        left: '50%',
+        transform: "translateX(-50%)"
       };
       return style;
     };
